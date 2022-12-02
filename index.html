@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,50 +8,78 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Presupuesto</title>
 </head>
+
 <body>
-        <h1 class="titulo">Gasto Semanal :</h1>
+    <h1 class="titulo">Gasto Semanal :</h1>
 
-        
-        <div class="tarjeta">
 
-            <header class="header">
-                <img src="/img/cerdo.png" alt="cerdoucha" id="cerdito">
+    <div class="tarjeta">
 
-            
-                <form class="datos">
-                   
-                    <div class="nombregasto column">
-                        <label for="gasto">Gasto:</label>
-                        <input type="text" class="inputGasto" placeholder="Anote su gasto">
-                    </div>
-                    
+        <header class="header">
+            <img src="img/cerdo.png" alt="cerdoucha" id="cerdito">
 
-                    <div class="dineroagastar column">
-                        <label for="cantidad" >Cantidad:</label>
-                        <input type="text" class="inputCantidad" placeholder="Introduzca una cantidad">
-                    </div>
 
-                </form>
+            <form class="datos" id="formulario">
 
-            </header>
+                <div class="nombregasto column">
+                    <label for="gasto">Gasto:</label>
+                    <input type="text" class="inputGasto" id="inputGasto" placeholder="Anote su gasto">
+                </div>
 
-            <section class="section">
-                
-                    <div class="tres"> DIV1</div>
-                    <div class="tres">DIV1 </div>
-                    <div class="tres"> DIV1</div>
-                
 
-            </section>
-            
+                <div class="dineroagastar column">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="text" class="inputCantidad" id="cantidad" placeholder="Introduzca una cantidad">
+                </div>
 
-        </div>
+                <div class="divBoton">
+                <button type="submit" id="boton">Agregar </button>
+                </div>
+            </form>
+
+        </header>
+
+        <section class="section">
+
+            <div class="div presupuesto">
+                <h2 class="h2 pri">PRESUPUESTO</h2>
+                <div class="j">
+                    <p id="presuTotal" class="circulo"></p>
+                </div>
+            </div>
+
+
+            <div class="div lista">
+                <div class="h2 seg"></div>
+                <h2 class="h2">Lista de gastos:</h2>
+                 <div id="listaGastos">eweeeeeeeeeeeeeee Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tenetur, fugiat cupiditate. Velit sint laboriosam earum quis, et inventore iure tempore quasi in
+                        debitis laudantium porro quam ullam laborum, quia repellat. Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Et assumenda culpa ducimus cumque quod amet omnis quis repellendus
+                        mollitia suscipit, nobis excepturi fugit sequi itaque molestiae, velit animi! Quia, dicta.
+                </div>
+            </div>
+
+            <div class="div restante">
+                <h2 class="h2 ter">PRESUPUESTO<br><span>RESTANTE</span></h2>
+                <div class="j">
+                    <div id="restante" class="circulo">Hola hola</div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+    </div>
     </div>
 
 
-   
-    
-    
-    <script src="/js.js"></script>
+
+
+
+    <script src="js.js"></script>
 </body>
+
 </html>
